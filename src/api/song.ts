@@ -43,6 +43,7 @@ export const songUrl = (
     params: {
       id,
       level,
+      unblock: true,
       timestamp: Date.now(),
     },
   });
