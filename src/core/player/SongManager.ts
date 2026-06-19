@@ -222,7 +222,7 @@ class SongManager {
     // 是否有播放地址
     if (!songData || !songData?.url) return { id, url: undefined };
     // 是否仅能试听
-    const isTrial = songData?.freeTrialInfo != null;
+    const isTrial = songData?.freeTrialInfo != 'null';
     // 返回歌曲地址
     const normalizedUrl = isElectron
       ? songData.url
